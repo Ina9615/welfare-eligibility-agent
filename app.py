@@ -211,6 +211,48 @@ st.markdown(
         margin-bottom: 5px;
     }
 
+    /* =====================================================
+       TEXT INPUT VISIBILITY FIX
+       ===================================================== */
+
+    div[data-baseweb="input"] {
+        background-color: #ffffff !important;
+    }
+
+    div[data-baseweb="input"] input {
+        color: #111111 !important;
+        background-color: #ffffff !important;
+        -webkit-text-fill-color: #111111 !important;
+        caret-color: #111111 !important;
+    }
+
+    div[data-baseweb="input"] input::placeholder {
+        color: #666666 !important;
+        opacity: 1 !important;
+        -webkit-text-fill-color: #666666 !important;
+    }
+
+    /* =====================================================
+       TEXT AREA VISIBILITY FIX
+       ===================================================== */
+
+    div[data-baseweb="textarea"] {
+        background-color: #ffffff !important;
+    }
+
+    div[data-baseweb="textarea"] textarea {
+        color: #111111 !important;
+        background-color: #ffffff !important;
+        -webkit-text-fill-color: #111111 !important;
+        caret-color: #111111 !important;
+    }
+
+    div[data-baseweb="textarea"] textarea::placeholder {
+        color: #666666 !important;
+        opacity: 1 !important;
+        -webkit-text-fill-color: #666666 !important;
+    }
+
     </style>
     """,
     unsafe_allow_html=True
